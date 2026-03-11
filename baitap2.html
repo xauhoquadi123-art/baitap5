@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo from đơn giản</title>
+</head>
+<style>
+    body{
+        background:#bde1e1;
+        font-family: Arial;
+    }
+
+    .form-box{
+        width:700px;
+        margin:40px auto;
+        background:white;
+        padding:20px;
+    }
+
+    h2{
+        background:#ff4d00;
+        color:white;
+        text-align:center;
+        padding:10px;
+    }
+
+    .row{
+        display:flex;
+        margin-top:15px;
+    }
+
+    .row label{
+        width:120px;
+        color:#204ecf;
+        font-size:18px;
+    }
+
+    input[type="text"]{
+        width:300px;
+        height:30px;
+    }
+
+    .list{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:10px 40px;
+    }
+
+    .list label{
+        color:#ff6a33;
+    }
+
+    .btn{
+        margin-left:120px;
+        margin-top:20px;
+    }
+
+</style>
+<body>
+<h2> SỞ THÍCH CỦA BẠN</h2>
+<form>
+    <label for="uname">Họ Và Tên</label>
+    <input type="textbox"id="uname" name="yourname"/>
+    <br>
+    <label for="Email">Email</label>
+    <input type="textbox"id="email"name="email"/>
+    <br>
+    Sở thích <br>
+    <label><input name="hobby" value="travel" type="checkbox"/>Thể thao</label>
+    <label><input name="hobby" value="travel" type="checkbox"/>Âm nhạc</label>
+    <label><input name="hobby" value="travel" type="checkbox"/>Đọc sách</label> <br>
+    <label><input name="hobby" value="travel" type="checkbox"/>Lướt web</label>
+    <label><input name="hobby" value="travel" type="checkbox"/>Chơi game</label>
+    <label><input name="hobby" value="travel" type="checkbox"/>Điện ảnh</label> <br>
+    <label><input name="hobby" value="travel" type="checkbox"/>Du lịch</label> <br>
+    <input type="submit" value="Gửi thông tin">
+    <button type="reset" value="Nhập lại"> Nhập lại</button>
+</form>
+</body>
+</html>
